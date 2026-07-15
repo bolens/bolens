@@ -57,10 +57,10 @@ I spend most of my time self-hosting, tuning Arch/CachyOS setups, and shipping C
 
 <p>
   <a href="https://github.com/bolens">
-    <img height="165" alt="Bolens GitHub stats" src="https://github-readme-stats.vercel.app/api?username=bolens&show_icons=true&theme=dark&hide_border=true&count_private=true&include_all_commits=true" />
+    <img height="165" alt="Bolens GitHub stats" src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=bolens&show_icons=true&theme=dark&hide_border=true&count_private=true&include_all_commits=true" />
   </a>
   <a href="https://github.com/bolens">
-    <img height="165" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bolens&layout=compact&theme=dark&hide_border=true" />
+    <img height="165" alt="Top languages" src="https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs/?username=bolens&layout=compact&theme=dark&hide_border=true" />
   </a>
 </p>
 
