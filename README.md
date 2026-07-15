@@ -1,12 +1,13 @@
 # Michael Bolens
 
 <p>
-  <img alt="Location" src="https://img.shields.io/badge/Lakewood%2C%20CO-0D1117?style=flat-square" />
+  <img alt="Lakewood, CO" src="https://img.shields.io/badge/Lakewood%2C%20CO-0D1117?style=flat-square" />
+  <img alt="Milwaukee, WI" src="https://img.shields.io/badge/Milwaukee%2C%20WI-0D1117?style=flat-square" />
   <img alt="Followers" src="https://img.shields.io/github/followers/bolens?style=flat-square&label=Followers&logo=github&color=238636" />
   <img alt="GitHub since" src="https://img.shields.io/badge/GitHub-since_2011-1F6FEB?style=flat-square&logo=github&logoColor=white" />
 </p>
 
-Lakewood, CO · Linux desktop, homelab, and small sharp tools.
+Linux desktop, homelab, and small sharp tools.
 
 I spend most of my time self-hosting, tuning Arch/CachyOS setups, and shipping CLI utilities that make day-to-day systems work nicer — shells, Wayland bars, game launchers, MCP helpers, the occasional incident-response script.
 
