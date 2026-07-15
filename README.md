@@ -3,7 +3,7 @@
 <p>
   <img alt="Location" src="https://img.shields.io/badge/Lakewood%2C%20CO-0D1117?style=flat-square" />
   <img alt="Followers" src="https://img.shields.io/github/followers/bolens?style=flat-square&label=Followers&logo=github&color=238636" />
-  <img alt="Public repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fbolens&query=%24.public_repos&style=flat-square&label=Public%20repos&logo=github&color=1F6FEB" />
+  <img alt="GitHub since" src="https://img.shields.io/badge/GitHub-since_2011-1F6FEB?style=flat-square&logo=github&logoColor=white" />
 </p>
 
 Lakewood, CO · Linux desktop, homelab, and small sharp tools.
