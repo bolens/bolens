@@ -11,6 +11,8 @@ Linux desktop, homelab, and small sharp tools.
 
 I spend most of my time self-hosting, tuning Arch/CachyOS setups, and shipping CLI utilities that make day-to-day systems work nicer — shells, Wayland bars, game launchers, MCP helpers, the occasional incident-response script.
 
+**Currently:** AUR incident-response tooling, Millennium CLI/MCP helpers, and desktop Linux config polish (Waybar, Fish, launch wrappers).
+
 ## Stack
 
 <p>
@@ -51,9 +53,28 @@ I spend most of my time self-hosting, tuning Arch/CachyOS setups, and shipping C
 - **Gaming on Linux** — launch wrappers, Proton/Gamescope pipelines
 - **Security hygiene** — AUR supply-chain response and recovery tooling
 
+## GitHub
+
+<p>
+  <a href="https://github.com/bolens">
+    <img height="165" alt="Bolens GitHub stats" src="https://github-readme-stats.vercel.app/api?username=bolens&show_icons=true&theme=dark&hide_border=true&count_private=true&include_all_commits=true" />
+  </a>
+  <a href="https://github.com/bolens">
+    <img height="165" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bolens&layout=compact&theme=dark&hide_border=true" />
+  </a>
+</p>
+
+<p>
+  <img alt="Contribution activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=bolens&bg_color=0d1117&color=c9d1d9&line=58a6ff&point=238636&area=true&hide_border=true&custom_title=Contribution%20activity" />
+</p>
+
 ## Elsewhere
 
-- GitHub: [github.com/bolens](https://github.com/bolens)
+<p>
+  <a href="https://github.com/bolens">
+    <img alt="GitHub" src="https://img.shields.io/badge/GitHub-bolens-181717?style=flat-square&logo=github&logoColor=white" />
+  </a>
+</p>
 
 <!-- Optional later: site, socials, contact
 - Site: https://bolens.dev
