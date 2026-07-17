@@ -32,16 +32,20 @@ I spend most of my time self-hosting, tuning Arch/CachyOS setups, and shipping C
   <img alt="MCP" src="https://img.shields.io/badge/MCP-111111?style=flat-square" />
 </p>
 
-## Selected projects
+## Active projects
 
 | Project | What it is |
 | --- | --- |
 | [**uddns**](https://github.com/bolens/uddns) | Micro multi-provider dynamic DNS updater |
-| [**aur-response-toolkit**](https://github.com/bolens/aur-response-toolkit) | Incident response for Arch AUR malware — Atomic Arch by default, plus opt-in Chaos RAT, Shai-Hulud, and xeactor campaigns |
 | [**LaunchLayer**](https://github.com/bolens/LaunchLayer) | Layered Steam game launch orchestration — preflight, per-game env, Gamescope/Proton wrappers |
+| [**ps-profile**](https://github.com/bolens/ps-profile) | Cross-platform PowerShell profile with 130+ lazy-loaded fragments |
 | [**millenium-helpers**](https://github.com/bolens/millenium-helpers) | Cross-platform Millennium CLI + MCP server (Linux, Windows, macOS) |
+| [**aur-response-toolkit**](https://github.com/bolens/aur-response-toolkit) | Incident response for Arch AUR malware — Atomic Arch by default, plus opt-in Chaos RAT, Shai-Hulud, and xeactor campaigns |
+| [**waybar-config**](https://github.com/bolens/waybar-config) | Modular Waybar for KDE Plasma 6 and Hyprland with per-monitor workspaces |
 | [**appicon**](https://github.com/bolens/appicon) | Resolve desktop/brand icons to local paths — CLI and MCP for Waybar, Rofi, agents |
+| [**fish-config**](https://github.com/bolens/fish-config) | Fish shell config — Tide, Fisher, modern CLI integrations |
 | [**arch-config**](https://github.com/bolens/arch-config) | Reproducible Arch/CachyOS workstation configuration with Zen 4, Btrfs, gaming, and systemd tuning |
+| [**homelab**](https://github.com/bolens/homelab) | Docker Compose stacks for self-hosting, reverse proxying, monitoring, and remote access |
 
 ## Focus areas
 
