@@ -26,8 +26,8 @@ care about tools that are easy to inspect, safe to run, and pleasant to use.
 | :--- | :--- | :--- |
 | **[uDDNS](https://github.com/bolens/uddns)** | TypeScript | Updates DNS records across multiple providers from one small service |
 | **[aur-response-toolkit](https://github.com/bolens/aur-response-toolkit)** | Rust · Shell | Detects and helps recover from known AUR malware campaigns |
-| **[LaunchLayer](https://github.com/bolens/LaunchLayer)** | Shell · TypeScript · Python | Composes preflight checks, per-game environments, and wrapper chains for Steam on Linux |
-| **[millenium-helpers](https://github.com/bolens/millenium-helpers)** | Go · Shell | Manages, upgrades, diagnoses, and controls Millennium across Linux, Windows, and macOS |
+| **[launch-layer](https://github.com/bolens/launch-layer)** | Shell · TypeScript · Python | Composes preflight checks, per-game environments, and wrapper chains for Steam on Linux |
+| **[millennium-helpers](https://github.com/bolens/millennium-helpers)** | Go · Shell | Manages, upgrades, diagnoses, and controls Millennium across Linux, Windows, and macOS |
 | **[appicon](https://github.com/bolens/appicon)** | Go | Resolves desktop and brand icons for Waybar, Rofi, scripts, and MCP clients |
 | **[arch-config](https://github.com/bolens/arch-config)** | Shell | Keeps my Arch/CachyOS workstation reproducible, tuned, and documented |
 
