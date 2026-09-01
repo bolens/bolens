@@ -25,12 +25,14 @@ automation to game-launch pipelines and incident-response utilities.</p>
 
 | Project | Job | Stack |
 | :--- | :--- | :--- |
-| **[uDDNS](https://github.com/bolens/uddns)** | Update DNS records across multiple providers from one service | `TypeScript` |
-| **[aur-response-toolkit](https://github.com/bolens/aur-response-toolkit)** | Detect and recover from known AUR malware campaigns | `Rust` `Shell` |
-| **[omarchy-privacy-devices](https://github.com/bolens/omarchy-privacy-devices)** · [docs](https://bolens.github.io/omarchy-privacy-devices/) | Add privacy indicators and device controls to Omarchy Shell | `QML` |
-| **[omarchy-p2p-services](https://github.com/bolens/omarchy-p2p-services)** · [docs](https://bolens.github.io/omarchy-p2p-services/) | Discover, monitor, and manage peer-to-peer services in Omarchy | `QML` |
-| **[launch-layer](https://github.com/bolens/launch-layer)** | Compose preflight checks, game environments, and wrapper chains for Steam | `Shell` `TypeScript` `Python` |
-| **[millennium-helpers](https://github.com/bolens/millennium-helpers)** | Manage and diagnose Millennium across Linux, Windows, and macOS | `Go` `Shell` |
+| **[launch-layer](https://github.com/bolens/launch-layer)** · [guide](https://bolens.github.io/launch-layer/) | Build repeatable Steam launch chains from layered configuration | `Shell` `TypeScript` `Python` |
+| **[omarchy-app-drawer](https://github.com/bolens/omarchy-app-drawer)** · [guide](https://bolens.github.io/omarchy-app-drawer/) | Reveal, collapse, and pin stock-bar widgets per monitor | `QML` |
+| **[omarchy-multi-monitor-workspaces](https://github.com/bolens/omarchy-multi-monitor-workspaces)** · [guide](https://bolens.github.io/omarchy-multi-monitor-workspaces/) | Assign deterministic workspace banks across any number of monitors | `QML` |
+| **[omarchy-privacy-devices](https://github.com/bolens/omarchy-privacy-devices)** · [guide](https://bolens.github.io/omarchy-privacy-devices/) | Monitor and control microphones, cameras, location, and screen sharing | `QML` `Python` |
+| **[omarchy-p2p-services](https://github.com/bolens/omarchy-p2p-services)** · [guide](https://bolens.github.io/omarchy-p2p-services/) | Discover and control local peer-to-peer and overlay-network services | `QML` `Python` |
+| **[uDDNS](https://github.com/bolens/uddns)** | Update DNS records across multiple providers when a public IP changes | `TypeScript` |
+| **[aur-response-toolkit](https://github.com/bolens/aur-response-toolkit)** | Detect, triage, and recover from known AUR supply-chain incidents | `Rust` |
+| **[millennium-helpers](https://github.com/bolens/millennium-helpers)** · [guide](https://bolens.github.io/millennium-helpers/) | Install, repair, update, and diagnose Millennium on Linux and Windows | `Go` `Shell` `PowerShell` |
 
 ## Toolbox
 
