@@ -28,8 +28,8 @@ automation to game-launch pipelines and incident-response utilities.</p>
 | Project | Job | Stack |
 | :--- | :--- | :--- |
 | **[launch-layer](https://github.com/bolens/launch-layer)** · [guide](https://bolens.github.io/launch-layer/) | Build repeatable Steam launch chains from layered configuration | `Shell` `TypeScript` `Python` |
-| **[uDDNS](https://github.com/bolens/uddns)** | Update DNS records across multiple providers when a public IP changes | `TypeScript` |
-| **[aur-response-toolkit](https://github.com/bolens/aur-response-toolkit)** | Detect, triage, and recover from known AUR supply-chain incidents | `Rust` |
+| **[uDDNS](https://github.com/bolens/uddns)** · [guide](https://bolens.github.io/uddns/) | Update DNS records across multiple providers when a public IP changes | `TypeScript` |
+| **[aur-response-toolkit](https://github.com/bolens/aur-response-toolkit)** · [guide](https://bolens.github.io/aur-response-toolkit/) | Detect, triage, and recover from known AUR supply-chain incidents | `Rust` |
 | **[millennium-helpers](https://github.com/bolens/millennium-helpers)** · [guide](https://bolens.github.io/millennium-helpers/) | Install, repair, update, and diagnose Millennium on Linux and Windows | `Go` `Shell` `PowerShell` |
 
 ### Omarchy desktop suite
