@@ -62,3 +62,7 @@ tooling here on [GitHub](https://github.com/bolens).
 
 When I'm away from a keyboard, you'll usually find me camping, hiking, cycling,
 playing disc golf, or exploring Colorado's craft beer scene.
+
+### Git hooks
+
+Run `bash scripts/install-git-hooks` once per clone. The pre-commit hook runs fast staged checks; pre-push runs the broader local CI gate.
