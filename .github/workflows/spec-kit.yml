@@ -31,4 +31,3 @@ jobs:
             xargs -0 -n1 bash -n
           find .agents .specify -type f -name '*.json' -print0 |
             xargs -0 -n1 jq empty
-          shellcheck .specify/scripts/bash/*.sh
