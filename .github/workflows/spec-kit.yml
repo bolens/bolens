@@ -1,33 +1,54 @@
+# Pin both workflow references and tooling-ref to the same immutable commit.
 name: Spec Kit
 
 on:
   pull_request:
+    paths:
+      - .agents/skills/speckit-*/**
+      - .specify/**
+      - .github/workflows/**
+      - AGENTS.md
   push:
     branches: [main]
+    paths:
+      - .agents/skills/speckit-*/**
+      - .specify/**
+      - .github/workflows/**
+      - AGENTS.md
+  schedule:
+    - cron: "38 10 * * 1"
+  workflow_dispatch:
+    inputs:
+      update:
+        description: Check for and propose a Spec Kit update
+        required: false
+        type: boolean
+        default: false
 
-permissions:
-  contents: read
+permissions: {}
 
 jobs:
   workflow-security:
-    name: Workflow security
+    if: github.event_name != 'schedule' && !inputs.update
     permissions:
       contents: read
-    uses: bolens/.github/.github/workflows/reusable-actionlint.yml@b179e4783aca035374a85da9676e0be893fa1701
+    uses: bolens/.github/.github/workflows/reusable-actionlint.yml@7159a187479e511a9420f8f4eec93246a43fea12
     with:
       security-audit: true
 
   validate:
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
-        with:
-          persist-credentials: false
-      - name: Validate scripts and metadata
-        shell: bash
-        run: |
-          find .specify/scripts/bash -type f -name '*.sh' -print0 |
-            xargs -0 -n1 bash -n
-          find .agents .specify -type f -name '*.json' -print0 |
-            xargs -0 -n1 jq empty
+    permissions:
+      contents: read
+    if: github.event_name != 'schedule' && !inputs.update
+    uses: bolens/.github/.github/workflows/reusable-spec-kit.yml@7159a187479e511a9420f8f4eec93246a43fea12
+    with:
+      tooling-ref: 7159a187479e511a9420f8f4eec93246a43fea12
+
+  update:
+    if: github.event_name == 'schedule' || inputs.update
+    permissions:
+      contents: write
+      pull-requests: write
+    uses: bolens/.github/.github/workflows/reusable-spec-kit-update.yml@7159a187479e511a9420f8f4eec93246a43fea12
+    with:
+      tooling-ref: 7159a187479e511a9420f8f4eec93246a43fea12
