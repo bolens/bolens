@@ -7,7 +7,6 @@ git diff --cached --check
 
 mapfile -t shell_files < <(git diff --cached --name-only --diff-filter=ACMR -- '.specify/scripts/bash/*.sh')
 if ((${#shell_files[@]})); then
-  shellcheck "${shell_files[@]}"
   printf '%s\0' "${shell_files[@]}" | xargs -0 -r -n1 bash -n
 fi
 

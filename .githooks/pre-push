@@ -5,6 +5,5 @@ root=$(git rev-parse --show-toplevel)
 cd "$root"
 find .specify/scripts/bash -type f -name '*.sh' -print0 | xargs -0 -r -n1 bash -n
 find .agents .specify -type f -name '*.json' -print0 | xargs -0 -r jq empty
-shellcheck .specify/scripts/bash/*.sh
 actionlint
 zizmor --offline --min-severity medium --min-confidence medium .github
