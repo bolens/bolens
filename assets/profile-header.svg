@@ -1,42 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="title description">
   <title id="title">Michael Bolens, systems builder</title>
-  <desc id="description">A compact system status panel for Linux desktops, self-hosted infrastructure, and practical utilities.</desc>
+  <desc id="description">A terminal session introducing Michael and a process tree of his work across Linux desktops, infrastructure, and gaming tools.</desc>
   <style>
     .panel { fill: #0d1117; stroke: #30363d; }
-    .rule { stroke: #30363d; }
-    .name { fill: #f0f6fc; font: 700 35px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: -1px; }
-    .label { fill: #8b949e; font: 600 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 1.4px; }
-    .value { fill: #c9d1d9; font: 500 17px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .rule, .tree { stroke: #30363d; }
+    .title { fill: #f0f6fc; font: 700 32px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: -1px; }
+    .text { fill: #c9d1d9; font: 500 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .muted { fill: #8b949e; font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: .8px; }
     .prompt { fill: #58a6ff; }
-    .active { fill: #3fb950; }
+    .path { fill: #d2a8ff; }
+    .signal { fill: #3fb950; }
     @media (prefers-color-scheme: light) {
       .panel { fill: #f6f8fa; stroke: #d0d7de; }
-      .rule { stroke: #d0d7de; }
-      .name { fill: #1f2328; }
-      .label { fill: #59636e; }
-      .value { fill: #25292e; }
+      .rule, .tree { stroke: #d0d7de; }
+      .title { fill: #1f2328; }
+      .text { fill: #25292e; }
+      .muted { fill: #59636e; }
       .prompt { fill: #0969da; }
-      .active { fill: #1a7f37; }
+      .path { fill: #8250df; }
+      .signal { fill: #1a7f37; }
     }
   </style>
-  <rect class="panel" x="1" y="1" width="958" height="258" rx="18" />
-  <circle cx="28" cy="26" r="5" fill="#f85149" />
-  <circle cx="46" cy="26" r="5" fill="#d29922" />
-  <circle cx="64" cy="26" r="5" fill="#3fb950" />
-  <text class="label" x="480" y="31" text-anchor="middle">MICHAEL@COLORADO</text>
-  <line class="rule" x1="22" y1="49" x2="938" y2="49" />
 
-  <text class="name" x="34" y="99"><tspan class="prompt">$</tspan> build useful systems</text>
-  <text class="value" x="35" y="132">Linux desktop tools · self-hosted services · gaming utilities</text>
+  <rect class="panel" x="1" y="1" width="958" height="298" rx="16" />
+  <circle cx="27" cy="25" r="5" fill="#f85149" />
+  <circle cx="45" cy="25" r="5" fill="#d29922" />
+  <circle cx="63" cy="25" r="5" fill="#3fb950" />
+  <text class="muted" x="480" y="29" text-anchor="middle">michael@colorado:~</text>
+  <line class="rule" x1="20" y1="48" x2="940" y2="48" />
 
-  <line class="rule" x1="34" y1="158" x2="926" y2="158" />
-  <text class="label" x="35" y="187">DESKTOP</text>
-  <text class="label" x="340" y="187">INFRASTRUCTURE</text>
-  <text class="label" x="691" y="187">UTILITIES</text>
-  <circle class="active" cx="41" cy="216" r="5" />
-  <circle class="active" cx="346" cy="216" r="5" />
-  <circle class="active" cx="697" cy="216" r="5" />
-  <text class="value" x="56" y="222">Omarchy / Hyprland</text>
-  <text class="value" x="361" y="222">Docker / DNS</text>
-  <text class="value" x="712" y="222">Rust / Go / TS</text>
+  <text class="text" x="34" y="82"><tspan class="prompt">$</tspan> whoami</text>
+  <text class="title" x="34" y="122">Michael Bolens</text>
+  <text class="text" x="35" y="153">I build tools close to the system:</text>
+  <text class="text" x="35" y="178">inspectable, repairable, and made to run.</text>
+
+  <text class="text" x="34" y="224"><tspan class="prompt">$</tspan> pwd</text>
+  <text class="text path" x="35" y="251">~/linux/systems</text>
+  <rect class="signal" x="35" y="269" width="9" height="16" rx="1" />
+
+  <line class="rule" x1="521" y1="68" x2="521" y2="274" />
+  <text class="muted" x="558" y="82">PROCESS TREE</text>
+  <text class="text" x="558" y="119">systems</text>
+  <line class="tree" x1="566" y1="130" x2="566" y2="240" />
+  <line class="tree" x1="566" y1="151" x2="590" y2="151" />
+  <line class="tree" x1="566" y1="195" x2="590" y2="195" />
+  <line class="tree" x1="566" y1="239" x2="590" y2="239" />
+  <circle class="signal" cx="600" cy="151" r="4" />
+  <circle class="signal" cx="600" cy="195" r="4" />
+  <circle class="signal" cx="600" cy="239" r="4" />
+  <text class="text" x="614" y="156">desktop</text>
+  <text class="muted" x="736" y="155">OMARCHY · HYPRLAND</text>
+  <text class="text" x="614" y="200">infrastructure</text>
+  <text class="muted" x="777" y="199">DNS · CONTAINERS</text>
+  <text class="text" x="614" y="244">gaming</text>
+  <text class="muted" x="700" y="243">STEAM · PROTON</text>
 </svg>
