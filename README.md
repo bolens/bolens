@@ -4,7 +4,7 @@
 
 <p><strong>Linux desktop tools · self-hosted infrastructure · gaming utilities</strong></p>
 
-<p><a href="#selected-work">Selected work</a> · <a href="#omarchy-desktop-suite">Omarchy suite</a> · <a href="#working-set">Working set</a> · <a href="#more-repositories">More repos</a></p>
+<p><a href="https://bolens.github.io/">Portfolio</a> · <a href="#selected-work">Selected work</a> · <a href="#omarchy-desktop-suite">Omarchy suite</a> · <a href="#working-set">Working set</a> · <a href="#more-repositories">More repos</a></p>
 
 <p><sub>Lakewood, Colorado · originally from Milwaukee, Wisconsin</sub></p>
 
@@ -28,7 +28,7 @@ Shell · TypeScript · Python · [User guide](https://bolens.github.io/launch-la
 
 Keep DNS records in sync when your public IP changes. Supports multiple
 providers and accounts, with configuration checks and a dry run to preview
-updates.
+updates. Includes CLI, Docker, and MCP interfaces.
 
 TypeScript · [User guide](https://bolens.github.io/uddns/) · [Architecture](https://bolens.github.io/uddns/architecture.html)
 
@@ -42,9 +42,10 @@ Rust · [User guide](https://bolens.github.io/aur-response-toolkit/)
 
 ### [Millennium Helpers](https://github.com/bolens/millennium-helpers)
 
-Manage Millennium, a Steam client customization framework, on Linux and
-Windows. Install and upgrade it, diagnose problems, or repair and roll back
-an installation from the command line.
+Manage Millennium, a Steam client customization framework, on Linux, macOS,
+and Windows. Install and upgrade it, diagnose problems, or repair and roll back
+an installation from the command line. Includes theme management and an MCP
+server.
 
 Go · Shell · PowerShell · [User guide](https://bolens.github.io/millennium-helpers/)
 
@@ -53,14 +54,20 @@ Go · Shell · PowerShell · [User guide](https://bolens.github.io/millennium-he
 Extensions for Omarchy Shell that keep desktop behavior visible and under the
 user's control.
 
-- **[App Drawer](https://github.com/bolens/omarchy-app-drawer)** reveals,
-  collapses, and pins stock-bar widgets independently on each monitor.
+- **[App Drawer](https://github.com/bolens/omarchy-app-drawer)** reveals or
+  collapses stock-bar widgets independently on each monitor, with shared pins
+  for widgets that should stay visible.
+  [User guide](https://bolens.github.io/omarchy-app-drawer/).
 - **[Multi-Monitor Workspaces](https://github.com/bolens/omarchy-multi-monitor-workspaces)**
   assigns stable, non-overlapping workspace banks across any number of displays.
+  [User guide](https://bolens.github.io/omarchy-multi-monitor-workspaces/).
 - **[Privacy Devices](https://github.com/bolens/omarchy-privacy-devices)** shows
-  and controls microphone, camera, location, screen-sharing, and capture activity.
+  and controls microphone, audio output, camera, location, screen-sharing, and
+  capture activity. [User guide](https://bolens.github.io/omarchy-privacy-devices/).
 - **[P2P Services](https://github.com/bolens/omarchy-p2p-services)** discovers
-  and controls local peer-to-peer and overlay-network services from the bar.
+  and controls local peer-to-peer and overlay-network services from the bar,
+  including supported Docker and Podman containers.
+  [User guide](https://bolens.github.io/omarchy-p2p-services/).
 
 ## Working set
 
@@ -76,6 +83,9 @@ user's control.
 
 <br>
 
+- **[Agent skills](https://github.com/bolens/agent-skills):** maintained skill
+  forks for coding agents, covering development, reviews, CI, web interfaces,
+  and Linux operations, with recorded upstream provenance.
 - **[PowerShell profile](https://github.com/bolens/ps-profile):** a modular,
   cross-platform shell toolkit with lazy-loaded feature fragments.
 - **[Fish configuration](https://github.com/bolens/fish-config):** shell modules,
@@ -83,7 +93,8 @@ user's control.
 - **[Waybar configuration](https://github.com/bolens/waybar-config):** a modular
   Wayland bar setup for KDE Plasma and Hyprland.
 - **[appicon](https://github.com/bolens/appicon):** resolves desktop and brand
-  icons to local files for bars, launchers, and scripts.
+  icons to local files for bars, launchers, scripts, and MCP clients.
+  [User guide](https://bolens.github.io/appicon/).
 - **[Arch configuration](https://github.com/bolens/arch-config):** versioned
   system and user configuration for my primary workstation.
 
@@ -96,6 +107,7 @@ user's control.
 
 - **[Homelab](https://github.com/bolens/homelab):** independently deployable
   Docker Compose stacks with documented storage, networking, and upgrades.
+  [User guide](https://bolens.github.io/homelab/).
 - **[Kasm workspace images](https://github.com/bolens/kasm-workspace-images):**
   custom Arch Linux, CachyOS, and Fedora-based browser desktop images.
 
@@ -108,8 +120,21 @@ user's control.
 
 - **[audio-utils](https://github.com/bolens/audio-utils):** verified Linux tools
   for lossless conversion, library audits, playlists, and audiobook workflows.
+- **[image-utils](https://github.com/bolens/image-utils):** raster conversion,
+  thumbnails, metadata inspection, and image-library checks.
+  [User guide](https://bolens.github.io/image-utils/).
+- **[video-utils](https://github.com/bolens/video-utils):** remuxing, encoding
+  viewing copies, stream inspection, and video-library audits.
+  [User guide](https://bolens.github.io/video-utils/).
+- **[archiving-utils](https://github.com/bolens/archiving-utils):** archive
+  packaging, inspection, comparison, and recovery with round-trip checks.
+  [User guide](https://bolens.github.io/archiving-utils/).
 - **[bolens.github.io](https://github.com/bolens/bolens.github.io):** the source
-  for my no-framework portfolio and project documentation sites.
+  for my HTML, CSS, and SVG portfolio. [Visit the site](https://bolens.github.io/).
+
+The image, video, and archive suites are early implementations. They retain
+source files and require `--apply` to write outputs. Their guides document
+format support and limits.
 
 </details>
 
