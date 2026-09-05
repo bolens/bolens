@@ -10,19 +10,43 @@
 
 </div>
 
-I build practical tools around the seams of a system: where desktop state,
-network services, launch environments, and recovery procedures need to be
-observable and predictable. My projects favor plain configuration, useful
-diagnostics, and documentation that explains the machinery.
+I'm **Michael Bolens**. I build Linux desktop extensions, tools for running
+self-hosted services, and utilities for gaming on Linux. I like being able to
+read a configuration, see what a tool will do, and diagnose it when it breaks.
 
 ## Selected work
 
-| Project | What it does | Built with |
-| :--- | :--- | :--- |
-| **[LaunchLayer](https://github.com/bolens/launch-layer)**<br>[Guide](https://bolens.github.io/launch-layer/) · [Architecture](https://bolens.github.io/launch-layer/architecture.html) | Gives Steam games one stable launch command, then composes per-game tuning from layered config files. | `Shell` `TypeScript` `Python` |
-| **[uDDNS](https://github.com/bolens/uddns)**<br>[Guide](https://bolens.github.io/uddns/) · [Architecture](https://bolens.github.io/uddns/architecture.html) | Updates DNS records when a public IP changes, with multi-account configuration and support for multiple providers. | `TypeScript` |
-| **[AUR Response Toolkit](https://github.com/bolens/aur-response-toolkit)**<br>[Guide](https://bolens.github.io/aur-response-toolkit/) | Detects, triages, and helps recover from known Arch User Repository supply-chain incidents. | `Rust` |
-| **[Millennium Helpers](https://github.com/bolens/millennium-helpers)**<br>[Guide](https://bolens.github.io/millennium-helpers/) | Installs, repairs, upgrades, rolls back, and diagnoses Millennium for Steam on Linux and Windows. | `Go` `Shell` `PowerShell` |
+### [LaunchLayer](https://github.com/bolens/launch-layer)
+
+Keep Steam launch options manageable on Linux. Use the same launch command
+for each game, with per-game settings in layered config files. Preview the
+resolved configuration and launch chain before starting a game.
+
+Shell · TypeScript · Python · [User guide](https://bolens.github.io/launch-layer/) · [Architecture](https://bolens.github.io/launch-layer/architecture.html)
+
+### [uDDNS](https://github.com/bolens/uddns)
+
+Keep DNS records in sync when your public IP changes. Supports multiple
+providers and accounts, with configuration checks and a dry run to preview
+updates.
+
+TypeScript · [User guide](https://bolens.github.io/uddns/) · [Architecture](https://bolens.github.io/uddns/architecture.html)
+
+### [AUR Response Toolkit](https://github.com/bolens/aur-response-toolkit)
+
+Investigate known Arch User Repository supply-chain incidents. Scan for
+indicators of compromise, collect reports, and run recovery workflows for
+supported campaigns.
+
+Rust · [User guide](https://bolens.github.io/aur-response-toolkit/)
+
+### [Millennium Helpers](https://github.com/bolens/millennium-helpers)
+
+Manage Millennium, a Steam client customization framework, on Linux and
+Windows. Install and upgrade it, diagnose problems, or repair and roll back
+an installation from the command line.
+
+Go · Shell · PowerShell · [User guide](https://bolens.github.io/millennium-helpers/)
 
 ## Omarchy desktop suite
 
@@ -40,10 +64,10 @@ user's control.
 
 ## Working set
 
-| Systems | Languages | Operations |
-| :--- | :--- | :--- |
-| Arch Linux · CachyOS · Omarchy | TypeScript · Rust · Go · QML | Docker Compose · Caddy · systemd |
-| Hyprland · KDE Plasma · Steam | Python · PowerShell · Bash · Fish | GitHub Actions · MCP · DNS |
+- **Desktop:** Arch Linux, CachyOS, Omarchy, Hyprland, KDE Plasma, and Steam.
+- **Languages:** TypeScript, Rust, Go, QML, Python, PowerShell, Bash, and Fish.
+- **Services and automation:** Docker Compose, Caddy, systemd, GitHub Actions,
+  MCP, and DNS.
 
 ## More repositories
 
@@ -92,7 +116,13 @@ user's control.
 Away from the keyboard, I spend time camping, hiking, cycling, playing disc
 golf, and exploring Colorado's craft beer scene.
 
-### Git hooks
+<details>
+<summary>Contributing to this profile</summary>
+
+<br>
 
 Run `bash scripts/install-git-hooks` once per clone. The pre-commit hook runs
-fast staged checks; pre-push runs the broader local CI gate.
+fast staged checks; pre-push runs the broader local CI gate. See the
+[delivery playbook](RELEASING.md) for validation and pull request requirements.
+
+</details>
