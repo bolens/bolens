@@ -1,5 +1,7 @@
 # Delivery playbook
 
+[Documentation](docs/README.md)
+
 This profile repository continuously publishes rendered GitHub Markdown from
 protected `main`; it does not use versioned releases.
 

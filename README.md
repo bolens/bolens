@@ -151,3 +151,5 @@ fast staged checks; pre-push runs the broader local CI gate. See the
 [delivery playbook](RELEASING.md) for validation and pull request requirements.
 
 </details>
+
+[Documentation](docs/README.md)

@@ -1,5 +1,7 @@
 # bolens Spec Kit project guide
 
+[Documentation](../../docs/README.md)
+
 The public GitHub profile, whose product is the rendered README and linked assets.
 
 Read this guide with `AGENTS.md` and `.specify/memory/constitution.md` before
