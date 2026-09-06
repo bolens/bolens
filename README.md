@@ -127,7 +127,7 @@ user's control.
   viewing copies, stream inspection, and video-library audits.
   [User guide](https://bolens.github.io/video-utils/).
 - **[archiving-utils](https://github.com/bolens/archiving-utils):** archive
-  packaging, inspection, comparison, and recovery with round-trip checks.
+  packaging, inspection, comparison, and extraction with round-trip checks.
   [User guide](https://bolens.github.io/archiving-utils/).
 - **[bolens.github.io](https://github.com/bolens/bolens.github.io):** the source
   for my HTML, CSS, and SVG portfolio. [Visit the site](https://bolens.github.io/).

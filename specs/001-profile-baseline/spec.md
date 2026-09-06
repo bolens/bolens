@@ -12,6 +12,9 @@ claim that the original work followed Spec Kit. New behavior requires a separate
 change contract. Existing feature specifications remain authoritative within their
 own scope.
 
+[Legacy contracts and complete coverage](legacy-contracts.md) specify every
+authored profile section, asset, disclosure and supporting maintenance surface.
+
 ## User scenarios and testing
 
 ### User story 1: Read the profile (P1)
