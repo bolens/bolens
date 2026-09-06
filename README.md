@@ -151,3 +151,8 @@ fast staged checks; pre-push runs the broader local CI gate. See the
 [delivery playbook](RELEASING.md) for validation and pull request requirements.
 
 </details>
+
+## License scope and attribution
+
+See [third-party notices](THIRD_PARTY_NOTICES.md) for the project license scope,
+retained upstream notices, and dependency or asset exceptions.
