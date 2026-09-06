@@ -1,0 +1,10 @@
+# Local development state
+/.devenv/
+/.direnv/
+/devenv.local.nix
+/devenv.local.yaml
+/.devenv.flake.nix
+/.devenv.*/
+__pycache__/
+*.py[cod]
+.ruff_cache/
