@@ -153,3 +153,8 @@ fast staged checks; pre-push runs the broader local CI gate. See the
 </details>
 
 [Documentation](docs/README.md)
+
+## License scope and attribution
+
+See [third-party notices](THIRD_PARTY_NOTICES.md) for the project license scope,
+retained upstream notices, and dependency or asset exceptions.
