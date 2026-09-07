@@ -1,5 +1,7 @@
 # bolens Profile Constitution
 
+[Documentation](../../docs/README.md)
+
 ## Core Principles
 
 ### I. Accurate Public Identity
