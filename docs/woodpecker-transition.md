@@ -21,3 +21,12 @@ image references. Updates need a reviewed PR and actual native execution.
 The rendered profile and public identity claims are unchanged. Tooling checks
 do not replace rendered review when profile content changes. No versioned
 release or publication credential is introduced.
+
+## Devcontainer updates
+
+Compatible open image updates are reviewed together with their Node smoke
+contract. The retained hosted Linux lane builds the actual `.devcontainer`
+Dockerfile and runs its post-create smoke with a read-only root filesystem,
+no network, and the runner UID. The task checkout remains writable as required
+by setup. The path filter includes devcontainer changes. A native Nix gate alone
+does not prove the selected devcontainer image builds or works.
