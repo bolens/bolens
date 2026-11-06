@@ -9,3 +9,7 @@ Installation validation alone does not establish feature completion.
   [tasks and delivery evidence](002-development-environments/tasks.md).
 
 The profile baseline includes [complete legacy contracts and coverage](001-profile-baseline/legacy-contracts.md).
+
+- [Woodpecker validation](003-woodpecker-validation/spec.md):
+  [plan](003-woodpecker-validation/plan.md),
+  [tasks](003-woodpecker-validation/tasks.md).
