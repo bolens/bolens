@@ -11,10 +11,12 @@ Docker socket, or host Nix store are provided.
 2. Squash the reviewed source through a normal PR without bypassing protection.
 3. Verify the genuine merged-main pipeline and its exact source revision.
 4. Retire only proven duplicate Linux work after required-check settings agree.
-   Preserve macOS, actual Docker, source lint and administrative workflows.
+   Preserve macOS, actual Docker and administrative workflows.
 
-Failures leave the existing hosted checks available. Recover through a
-corrective or revert PR. Review the Woodpecker image pins monthly and after
+Recover through a corrective or revert PR. Re-enable a retired hosted fallback
+and verify its current-head result before migrating protection during recovery.
+
+Review the Woodpecker image pins monthly and after
 security releases; existing dependency automation does not discover these YAML
 image references. Updates need a reviewed PR and actual native execution.
 
@@ -33,10 +35,10 @@ does not prove the selected devcontainer image builds or works.
 
 ## Linux check ownership
 
-After successful native PR and merged-main acceptance, Woodpecker owns the
+Following accepted native PR and merged-main checks, Woodpecker owns the
 locked Linux `devenv test` check. The hosted matrix keeps the macOS check and
-actual Docker development and VS Code devcontainer builds on Linux. Require
-the native PR context before merging this cutover. Recover through a reviewed
+actual Docker development and VS Code devcontainer builds on Linux. Keep
+the native PR context required on each current-head PR. Recover through a reviewed
 revert or corrective PR if the native runner becomes unavailable.
 
 The compatible Spec Kit update advances the managed integration to version
@@ -71,25 +73,34 @@ The existing correctness rules in `.markdownlint.json` remain unchanged.
 Run `python3 scripts/check-markdown.py --list` to inspect the exact selection,
 then `devenv test` for the full native gate. A malformed link in hidden editor
 documentation must fail the same check; tests exercise the real linter and
-literal filenames. Only after actual native PR and merged-main success may the
-duplicate hosted Source lint requirement move to
-`ci/woodpecker/pr/woodpecker`. Preserve macOS, Docker/editor and forge automation.
+literal filenames. The duplicate hosted Source lint workflow and requirement
+are retired following native PR/main acceptance. Keep
+`ci/woodpecker/pr/woodpecker` required, alongside the retained hosted platform
+and forge checks.
 
 ## CI discovery index
 
-| Group | Local command | Current native owner |
+Use the [shared CI vocabulary](https://github.com/bolens/.github/blob/main/docs/woodpecker-transition.md#ci-organization):
+`validate`, `test`, `site` and `publish` identify purpose, with descriptive
+subgroups. These labels preserve existing workflow and protected-status names.
+
+| Phase / group | Local command | Current native owner |
 | --- | --- | --- |
-| `validation` | `devenv test` (`scripts/check-development.sh` is the canonical check sequence) | `woodpecker` / `development-environment` |
-| `source-markdown` | `python3 scripts/check-markdown.py` (`--list` prints the selection) | Included in `validation` |
-| `workflow-security` | `actionlint` and `zizmor --offline --min-severity medium --min-confidence medium .github` | Included in `validation` |
-| `regression` | `python3 -m unittest discover -s tests -p test_markdown.py -v` | Included in `validation` |
+| `validate` / development | `devenv test` (`scripts/check-development.sh` is the canonical check sequence) | `woodpecker` / `development-environment` |
+| `validate` / Markdown | `python3 scripts/check-markdown.py` (`--list` prints the selection) | Included in `development-environment` |
+| `validate` / workflow security | `actionlint` and `zizmor --offline --min-severity medium --min-confidence medium .github` | Included in `development-environment` |
+| `test` / fixture regressions | `python3 -m unittest discover -s tests -p test_markdown.py -v` | Included in `development-environment` |
 
 The existing native PR context is `ci/woodpecker/pr/woodpecker`. Keep that name
 until a coordinated fleet change updates pipeline names, required checks and
-documentation together. A future `validation` pipeline name must preserve the
-same canonical command and check coverage. This change does not rename it.
+documentation together. Purpose labels describe coverage; the existing
+canonical command and pipeline name remain unchanged.
 
 The hosted development workflow still owns macOS and any actual Docker/editor
 checks selected there. Forge assignment, labels and Spec Kit update automation
-remain separate from these portable validation groups. Require genuine native
-PR and merged-main results before disabling a proven duplicate workflow.
+remain separate from these portable validation groups. The duplicate hosted
+Source lint workflow is retired. Require fresh native PR/main
+proof and coordinated settings before retiring any additional producer.
+
+Hosted workflow-security and Spec Kit requirements remain active alongside the
+native gate.
